@@ -1,0 +1,110 @@
+.tabel_antrian{
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.tabel_antrian thead{
+	background: #3399cc;
+}
+.tabel_antrian td{
+	padding: 10px;
+}
+.tabel_antrian tr:nth-child(even){
+    background-color: #f2f2f2
+}
+.tombol{
+	border: none;
+	color: white;
+	border-radius: -2%;
+	padding: 10px 10px;
+}
+.tambah{font-size: 24px;width: 100%;margin: 0 auto;height: 100px;border-radius: 3px;box-shadow: 2px 4px 2px #8e868647;}
+.hijau{
+background-color: #00a75a;
+}
+.biru{
+background: #66c1e6;
+}
+.kecil{
+	font-size: 10px;
+}
+
+/*FILE LOGIN*/
+.login-page{
+	background: url(../img/daniel-frank-201417-unsplash.jpg);
+	background-size: cover;
+}
+.login-logo{
+	background: #ffffff54;
+	padding: 10px;
+}
+.tombol-login{transition: 0.5s;background: #5990ff;}
+.tombol-login:hover{
+	box-shadow: 0px 20px 5px 0px #bfbfbf;
+}
+.inputan{
+	
+/* background: #00000014; */
+}
+.kotak{
+	background: #ffffff;
+	box-shadow: 0px 5px 10px 0px #bfbfbf;
+}
+.swal2-popup {
+  font-size: 1.5rem !important;
+}
+.wrap {
+	position: relative;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+}
+.kotaki {
+	position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 10px;
+}
+.a {
+	top: 0px;
+    left: 0;
+    transform: rotate(180deg);
+    border-bottom: 8px solid #fafafa;
+}
+.b {
+	top: 11px;
+    left: 11px;
+    transform: rotate(-90deg);
+    border-bottom: 8px solid #fafafa;
+}
+.c{
+    bottom: 0;
+    left: 0;
+    border-bottom: 8px solid #fafafa;
+}
+.d {
+    bottom: 11px;
+    right: 11px;
+    transform: rotate(90deg);
+    border-bottom: 8px solid #fafafa;
+}
+.e {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+}
+.st0 {
+    cursor: pointer;
+}
+.terpilih {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 0px #5f5b3eba;
+    transition: 0.3s ease-in-out;
+}

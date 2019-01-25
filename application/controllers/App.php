@@ -33,21 +33,22 @@ class App extends CI_Controller {
 		$id = 'P'.date('ymdhis'); // ID Pasien di ambil dari tahun bulan tanggal jam menit detik pada saat daftar
 
 		// Ambil data
-		$nama = $this->input->post('nama');
-		$tempat_lahir = $this->input->post('tempat_lahir');
+		$nama = preg_replace("/[^a-zA-Z\']/", "", $this->input->post('nama'));
+		$tempat_lahir = preg_replace("/[^a-zA-Z0-9\']/", "",$this->input->post('tempat_lahir'));
 		$tgl_lahir = $this->input->post('tgl_lahir');
-		$nik = $this->input->post('nik');
+		$nik = preg_replace("/[^0-9']/", "",$this->input->post('nik'));
 		$jk = $this->input->post('jk');
-		$pekerjaan = $this->input->post('pekerjaan');
-		$ibu_kandung = $this->input->post('ibu_kandung');
-		$alamat = $this->input->post('alamat');
-		$tlp = $this->input->post('tlp');
-		
+		$pekerjaan = preg_replace("/[^a-zA-Z0-9\']/", "",$this->input->post('pekerjaan'));
+		$ibu_kandung = preg_replace("/[^a-zA-Z\']/", "",$this->input->post('ibu_kandung'));
+		$alamat = preg_replace("/[^a-zA-Z0-9\']/", "",$this->input->post('alamat'));
+		$tlp = preg_replace("/[^0-9']/", "",$this->input->post('tlp'));
+
 		// Kemas data dalam array
 		$data = [
 			"id" => $id,
 			"nama" => $nama,
-			"ttl" => $ttl,
+			"tempat_lahir" => $tempat_lahir,
+			"tgl_lahir" => $tgl_lahir,
 			"nik" => $nik,
 			"jenis_kelamin" => $jk,
 			"pekerjaan" => $pekerjaan,

@@ -34,14 +34,15 @@ class App extends CI_Controller {
 
 		// Ambil data
 		$nama = $this->input->post('nama');
-		$ttl = $this->input->post('ttl');
+		$tempat_lahir = $this->input->post('tempat_lahir');
+		$tgl_lahir = $this->input->post('tgl_lahir');
 		$nik = $this->input->post('nik');
 		$jk = $this->input->post('jk');
 		$pekerjaan = $this->input->post('pekerjaan');
 		$ibu_kandung = $this->input->post('ibu_kandung');
 		$alamat = $this->input->post('alamat');
 		$tlp = $this->input->post('tlp');
-
+		
 		// Kemas data dalam array
 		$data = [
 			"id" => $id,

@@ -58,12 +58,6 @@
         <!-- /.col -->
       </div>
     </form>
-
-    <!-- /.social-auth-links -->
-    <br>
-    <a href="#">Saya lupa password</a><br>
-    <a href="register.html" class="text-center">Daftar sebagai admin baru</a>
-
   </div>
   <!-- /.login-box-body -->
 </div>

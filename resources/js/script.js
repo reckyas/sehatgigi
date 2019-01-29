@@ -21,12 +21,14 @@ main.addEventListener('submit',function (e) {
 				processData: false,
 				dataType : 'JSON',
 				error: function () {
-				swal({
-				  type: 'error',
-				  title: 'Oops...',
-				  text: 'Terjadi sebuah kesalahan'
-				})
-			},
+					$('#csrf_field').attr('name'.response.csrf_data.name);
+					$('#csrf_field').val(response.csrf_data.hash);
+					swal({
+					type: 'error',
+					title: 'Oops...',
+					text: 'Terjadi sebuah kesalahan'
+					})
+				},
 				success: function (response) {
 					$(modall).modal('hide');
 					swal({
@@ -38,6 +40,8 @@ main.addEventListener('submit',function (e) {
 		            }); 
 					getDataForTable().ajax.reload();
 					getDataForTable2().ajax.reload();
+					$('#csrf_field').attr('name'.response.csrf_data.name);
+					$('#csrf_field').val(response.csrf_data.hash);
 				}
 			});
     	} else {
@@ -54,6 +58,8 @@ main.addEventListener('submit',function (e) {
 				 
 			},
 			error: function () {
+				$('#csrf_field').attr('name'.response.csrf_data.name);
+				$('#csrf_field').val(response.csrf_data.hash);
 				swal({
 				  type: 'error',
 				  title: 'Oops...',
@@ -61,6 +67,8 @@ main.addEventListener('submit',function (e) {
 				})
 			},
 			success: function (response) {
+				$('#csrf_field').attr('name'.response.csrf_data.name);
+				$('#csrf_field').val(response.csrf_data.hash);
 				$(modall).modal('hide');
 				window[fnName]();
 				swal({

@@ -35,7 +35,7 @@ class App extends CI_Controller {
 		// Ambil data
 		$nama = preg_replace("/[^a-zA-Z\']/", "", $this->input->post('nama'));
 		$tempat_lahir = preg_replace("/[^a-zA-Z0-9\']/", "",$this->input->post('tempat_lahir'));
-		$tgl_lahir = $this->input->post('tgl_lahir');
+		$tanggal_lahir = $this->input->post('tgl_lahir');
 		$nik = preg_replace("/[^0-9']/", "",$this->input->post('nik'));
 		$jk = $this->input->post('jk');
 		$pekerjaan = preg_replace("/[^a-zA-Z0-9\']/", "",$this->input->post('pekerjaan'));

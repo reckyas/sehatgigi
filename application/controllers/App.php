@@ -48,7 +48,7 @@ class App extends CI_Controller {
 			"id" => $id,
 			"nama" => $nama,
 			"tempat_lahir" => $tempat_lahir,
-			"tgl_lahir" => $tgl_lahir,
+			"tanggal_lahir" => $tgl_lahir,
 			"nik" => $nik,
 			"jenis_kelamin" => $jk,
 			"pekerjaan" => $pekerjaan,
